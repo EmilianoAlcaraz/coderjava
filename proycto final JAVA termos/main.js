@@ -17,7 +17,7 @@ while( usuario != "Emiliano"){
 alert("Usuario ingresado incorrecto");
 usuario = prompt("ingrese nuevamente el usuario correcto");
 }
-
+alert("Bienvenido, Emiliano")
 
 
 
