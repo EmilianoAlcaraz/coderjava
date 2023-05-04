@@ -1,78 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
     <link rel="stylesheet" href="/style.css">
-    <title>Contacto</title>
-</head>
+  </head>
+  <body>
+    <nav class="navegacion">
 
-<body class="cuerpo__pagina">
+        <!-- logo de la emrpresa -->
+        <img src="https://cdn.shopify.com/s/files/1/0375/3269/6635/articles/blog-news-master_series_2017-tile_671x.jpg?v=1594862358PP" class="logo" alt="logo de la empresa">
+        <!-- titulo de la pagina -->
+   <h1 class="titulo">BIENVENIDOS A IMPORTADOS NORTE </h1>
 
-    <header>
-
-        <nav class="navegacion">
-  
-              <!-- logo de la emrpresa -->
-              <img src="https://cdn.shopify.com/s/files/1/0375/3269/6635/articles/blog-news-master_series_2017-tile_671x.jpg?v=1594862358PP" class="logo" alt="logo de la empresa">
-              <!-- titulo de la pagina -->
-         <h1 class="titulo">BIENVENIDOS A IMPORTADOS NORTE </h1>
-    
-                     <!-- listas desordenada de paginas -->
-                       <ul id="lista">
-                            <li><a href="/index.html">inicio</a></li>
-
-                            <li><a href="/contacto.html">contacto</a></li>
-                
-                            <li><a href="/modelos.html">modelos</a></li> 
-                            
-                            <li><a href="/sobrenosotros.html">sobre nosotros</a></li> 
-                       </ul>
-         </nav>
-   </header>
-<!-- mi main -->
-<main>
-
-<form action="" method="" enctype="multipart/form-data">
-
-<p class="titulo-2">Coloque sus datos aqui.</p>
-
-<fieldset class="caja__1">
-
-<!-- formularios de contactos -->
-
-<div class="formulario">
-
-<label for="example@gmail.com" class="form-label">Correo Electronico</label>
-<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-<label for="exampleFormControlTextarea1" class="form-label">Coloque su direccion</label>
-<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-<input type="submit" value="Enviar">
-<input type="reset" value="Borrar todo">
-</div>
-
- <!-- preguntas despues de formulario -->
-
-<h2 class="titulo-2">No esta registrado?</h2>
-<p class="titulo-2">Cree su Usuario aqui.</p>
-
-<!-- formulario de creacion de datos del usuario -->
-
-<div class="formulario">
-<input class="formulario" type="email" placeholder="Cree un Correo" aria-label="Cree un Correo">
-<input class="formulario" type="password" placeholder="Contraseña" aria-label="Contraseña">
-<input class="formulario" type="password" placeholder="Reescriba la Contraseña" aria-label="Reescriba la Contraseña">
-<input type="submit" value="Enviar">
-<input type="reset" value="Borrar todo">
-</div>
-
-</fieldset>
-
-</form>
-
-</main>
-
+               <!-- listas desordenada de paginas -->
+                 <ul id="lista">
+                      <li><a href="/index.html">inicio</a></li>
+                      
+                      <li><a href="/contacto.html">contacto</a></li>
+          
+                      <li><a href="/modelos.html">modelos</a></li> 
+                      
+                      <li><a href="/sobrenosotros.html">sobre nosotros</a></li> 
+                 </ul>
+   </nav>
+    <form>
+      <h2>Registro</h2>
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit" id="login-button">Ingresar</button>
+    </form>
+    <script src="/main.js"></script>
+  </body>
+</html>
 <!-- pie de pagina -->
 <footer class="pie__de__pagina">
 
@@ -84,17 +46,6 @@ Copyright 2023 stanley-arg, todos los derechos reservados.
     <a href="https://www.facebook.com/StanleyPmi">facebook</a>
     <a href="https://www.instagram.com/stanley_arg/">Instagram</a>
 </section>
-<div class="formulario">
-
- <label for="example@gmail.com" class="form-label">Correo Electronico</label>
- <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
- <label for="exampleFormControlTextarea1" class="form-label">Coloque su direccion</label>
- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
- <input type="submit" value="Enviar">
- 
-</div>
 </footer>
-
-
 </body>
 </html>
