@@ -18,18 +18,6 @@ productos. array.forEach(item =>{
     console.log(item); - console.log((item.precio));
 });
 
-
-//pagina modelos
-
-let respuesta = prompt("Bienvenido a Importados Norte, a realizado compras en esta pagina?")
-if(respuesta === "si") 
-alert("Perfecto, avisanos cualquier duda!!")
-
-else{
-    if(respuesta === "no")
-    alert("Genial, eres nuevo aqui, ojala disfrutes los produtos!!")
-}
-
   let nombre = prompt("ingrese el nombre del producto");
 const encontrado = productos.find(item.nombre===("termo rosa"))
 console.log(encontrado);
@@ -43,6 +31,18 @@ if(encontrado){
         `El producto ${nombre} no fue encontrado en la lista de productos.`
         alert(mensaje);
         }
+
+
+//pagina modelos
+
+let respuesta = prompt("Bienvenido a Importados Norte, a realizado compras en esta pagina?")
+if(respuesta === "si") 
+alert("Perfecto, avisanos cualquier duda!!")
+
+else{
+    if(respuesta === "no")
+    alert("Genial, eres nuevo aqui, ojala disfrutes los produtos!!")
+}
 
 
 function saludar (saludo, nombre){
@@ -84,9 +84,9 @@ const productos = ["termo stanley rosa", "termo stanley rojo", "termo stanley ve
 let nombres=  prompt("ingrese el producto que desee");
 let posicion= productos.indexOf(nombres);
 
-//if(posicion 1= -1){
-   // alert("el producto ${nombre} esta en el puesto ${posicion}");
-//}
+if(posicion 1 = -1){
+   alert("el producto ${nombre} esta en el puesto ${posicion}");
+}
    
 // funcion en orden 
 
