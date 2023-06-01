@@ -9,7 +9,7 @@
 
     const username = document.querySelector('#username').value;
     const password = document.querySelector('#password').value;
-    if (username === 'Emiliano' && password === '123456');
+    (username === 'Emiliano' && password === '123456') &&
       alert('Bienvenido Emiliano');
       const perfil = {
         nombre: 'Emiliano',
