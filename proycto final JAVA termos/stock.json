@@ -1,0 +1,6 @@
+[
+    {"marca":"Termos stanley","modelo":"rosa","precio":15000,"stock": 5},
+    {"marca":"Termos stanley","modelo":"rojo","precio":20000,"stock": 6},
+    {"marca":"Termos stanley","modelo":"verde","precio":17000,"stock": 4},
+    {"marca":"Termos stanley","modelo":"azul","precio":10000,"stock": 8}
+]

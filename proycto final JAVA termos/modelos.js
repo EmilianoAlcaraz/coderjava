@@ -65,4 +65,40 @@ console.log(productosEnRango);
 // Resultado: [{ nombre: 'termo stanley rosa', precio: 15000 }, { nombre: 'termo stanley rojo', precio: 20000 }, { nombre: 'termo stanley azul', precio: 10000}]
 
 
+// Creación de un objeto JSON
+let productosJSON = JSON.stringify(productos);
+console.log(productosJSON);
+// Resultado: "[{"id":1,"nombre":"termo stanley rosa","precio":15000},{"id":2,"nombre":"termo stanley rojo","precio":20000},{"id":3,"nombre":"termo stanley verde","precio":17000},
+[{"id": 4,"nombre":"termo stanley azul","precio":10000}]
+
+
+//stock JSON
+
+const traerStock = async () => {
+  try{
+    const response = await fetch ("stock.json");
+    const stock = await response.json();
+    return stock ;
+  
+  }catch(error){
+    console.log(error);
+  }
+}
+stock= traerStock();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
