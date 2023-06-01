@@ -10,46 +10,59 @@ else{
 }
 
 
-function saludar (saludo, nombre){
-  let mensaje = `${hola} ${emiliano}`;
-     console.log(mensaje);
-}
-     saludar(hola, bienvenido)
-
-
 //metodo de busqueda 
-
-const numeros = [
-    {id: 1, nombre: "termo rosa",precio: 17.000},
-    {id: 2, nombre: "termo verde", precio: 13.000},
-    {id: 3, nombre: "termo negro", precio: 20.000},
-    {id: 4, nombre: "vaso termico", precio: 6500},
-];
-numeros. array.forEach(item =>{
-    console.log(item); - console.log((item.precio));
-});
-
-  let nombre = prompt("ingrese el nombre del producto");
-const encontrado = productos.find(item.nombre===("termo rosa"))
-console.log(encontrado);
-
-if(encontrado){
-    let mensaje =
-    `El producto ${nombre} fue encontrado en la lista de productos.`
-    alert(mensaje);
-    }else{
-        let mensaje =
-        `El producto ${nombre} no fue encontrado en la lista de productos.`
-        alert(mensaje);
-        }
-
-        //arreglos
-
 const productos = ["termo stanley rosa", "termo stanley rojo", "termo stanley verde", "termo stanley azul"];
 let nombres=  prompt("ingrese el producto que desee");
 let posicion= productos.indexOf(nombres);
+// Array de productos en el carrito de compras
+let carrito = [
+  { id: 1, nombre: 'termo stanley rosa', precio: 15000},
+  { id: 2, nombre: 'termo stanley rojo', precio: 20000},
+  { id: 3, nombre: 'termo stanley verde', precio: 17000},
+  { id: 4, nombre: 'termo stanley azul', precio: 10000},
+];
 
-if(posicion == -1){
-   alert("el producto ${nombre} esta en el puesto ${posicion}");
+// Función para eliminar un producto del carrito de compras
+function eliminarDelCarrito(idProducto) {
+
+  // Encontrar el índice del producto en el carrito
+
+  let indiceProducto = carrito.findIndex(function(producto) {
+    return producto.id === idProducto;
+  });
+
+  if (indiceProducto !== -1) {
+    // Si se encontró el producto, eliminarlo del carrito
+    carrito.splice(indiceProducto, 1);
+    console.log('El producto se eliminó del carrito.');
+  } else {
+    console.log('El producto no se encontró en el carrito.');
+  }
 }
+
+//funcion de eliminar del carrito de compras
+
+eliminarDelCarrito(2); // El producto se eliminó del carrito.
+eliminarDelCarrito(4); // El producto no se encontró en el carrito.
+
+
+console.log(carrito);
+// Resultado: [{ id: 1, nombre: 'termo stanley rosa', precio: 15000 }, { id: 3, nombre: 'termo stanley verde', precio: 17000}]
+
+
+
+// Función para filtrar productos por rango de precios
+function filtrarPorPrecio(minPrecio, maxPrecio) {
+  let productosFiltrados = productos.filter(function(productos){
+    return productos.precio >= minPrecio && productos.precio <= maxPrecio;
+  });
+
+  return productosFiltrados;
+}
+
+let productosEnRango = filtrarPorPrecio(10000, 20000);
+console.log(productosEnRango);
+// Resultado: [{ nombre: 'termo stanley rosa', precio: 15000 }, { nombre: 'termo stanley rojo', precio: 20000 }, { nombre: 'termo stanley azul', precio: 10000}]
+
+
 

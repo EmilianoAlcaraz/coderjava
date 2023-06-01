@@ -1,11 +1,26 @@
 //pagina contacto
 
 let usuario = prompt("Ingrese su usuario");
-while( usuario != "emiliano"){
-alert("Usuario ingresado incorrecto");
-usuario = prompt("ingrese nuevamente el usuario correcto");
-}
-alert("Bienvenido, emiliano")
+while( usuario != "Emiliano"){
+  alert("Usuario ingresado incorrecto");
+  usuario = prompt("ingrese nuevamente el usuario correcto");
+  }
+  alert("Bienvenido, Emiliano")
+
+    const username = document.querySelector('#username').value;
+    const password = document.querySelector('#password').value;
+    if (username === 'Emiliano' && password === '123456');
+      alert('Bienvenido Emiliano');
+      const perfil = {
+        nombre: 'Emiliano',
+        apellido: 'Gonzalez',
+        edad: 22,
+        sexo: 'M',
+        telefono: 123456789,
+        direccion: 'Calle 123 # 45',
+        email: 'ejeyd@example.com',
+        password: '123456'
+        };
 
  // Previene que el formulario se envíe automáticamente
 
@@ -20,23 +35,7 @@ loginButton.addEventListener('submit', (event) => {
 
 });
 
-//creador de perfil del cliente para pagina con objetos
-
-function persona (nombrePersona, edadPersona, direccionPersona){
-    this.nombrePersona = nombrePersona;
-    this.edadPersona = edadPersona;
-    this.direccionPersona = direccionPersona;
-} 
-const emiliano = new persona ("Emiliano", 22, "Ciudad Juarez");
-const emiliano2 = new persona ("Emiliano", 22, "Ciudad Juarez");
-const emiliano3 = new persona ("Emiliano", 22, "Ciudad Juarez");
-console.log(emiliano);
-console.log(emiliano2);
-console.log(emiliano3);
-
-
 // funcion en orden 
-
 function ordenar (lista) {
     lista.sort();
     return lista;
@@ -44,6 +43,12 @@ function ordenar (lista) {
     const lista = ["termo stanley rosa", "termo stanley rojo", "termo stanley verde", "termo stanley azul"];
     const lista2 = ordenar(lista);
     console.log(lista2);
+
+
+
+
+
+    
 
 
 
