@@ -6,7 +6,6 @@ while( usuario != "Emiliano"){
   usuario = prompt("ingrese nuevamente el usuario correcto");
   }
   alert("Bienvenido, Emiliano")
-
     const username = document.querySelector('#username').value;
     const password = document.querySelector('#password').value;
     if (username === 'Emiliano' && password === '123456');
