@@ -5,7 +5,7 @@
     font-size: 25px;
    border-radius: 10px;
    font-weight: 100;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 /* segundo sub titulo de la pagina principal */
@@ -14,7 +14,7 @@ h2{
     color: rgb(14, 15, 3); 
     font-size: 30px;
     text-align: center;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -26,7 +26,7 @@ h2{
     background-position: 3cm;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: end;
     list-style-type: none;
 
 
@@ -49,20 +49,13 @@ h2{
     margin: 10px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-   
-   
-    
-    
-    
+    font-weight: 700; 
 }
 
 /* foto principal */
 .foto-1{
 
-    width: 100%;
-    
-   
+    width: 90%;
     
 }
 /* es boton de mas info sobre las motos */
@@ -73,13 +66,6 @@ h2{
    text-decoration: none;
 }
 
-/* logo de la emrpresa */
-.logo{
-
-    width: 5%;
-    
-}
-
 /* foto despues de la caja de inicio*/
 .imagen{
 
@@ -87,7 +73,7 @@ h2{
 
 }
 
-/* precio en bloque de las motos */
+/* precio en bloque de los termos */
 
  .precio-base{
 
@@ -106,16 +92,6 @@ h2{
 
  }
 
-/* imagenes en linea pagina modelos */
- .mitad-imagen{
-    
-    padding-left: 2%;
-    display: inline;
-    height: 800px;
-    width: 800px;
-    object-fit: cover;
-    
- }
 
  .mitad-imagen:hover{
 
@@ -123,37 +99,16 @@ h2{
     transition: all 2s;
  }
 
-
- 
-
  .titulo-2{
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(14, 15, 3);
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 10px;
     font-weight: 100;
-    text-align: left;
+    text-align: right;
 }
 
-
-/* sub titulo centrado en pagina merchadising */
-.stock{
-    text-align: left;
-    font-size: 25px;
-    color: rgb(20, 19, 18);
-    
-}
-/* imagen de bolsos,remeras y camperas */
-.stock-imagenes{
-
-    padding-left: 8%;
-    display: inline;
-    height: 700px;
-    width: 700px;
-    object-fit: cover;
-
-}
 
 .stock-imagenes:hover{
 
@@ -163,22 +118,20 @@ h2{
 }
  /* parrafo de sobre nosotros */
 .texto{
-  
-    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
     list-style-type: none;
     width: 100%;
     color: rgb(19, 16, 16);
    
-
-    
 }    
 
 /* fotos de sobre nosotros */
 .fabrica{
-
-    margin: 3%;
+    padding: 3%;
+    margin: 2%;
     display: inline;
-    width: 800px;
+    width: 700px;
     object-fit: cover;
     height: 800px
     
@@ -186,7 +139,7 @@ h2{
 
 /* menu navegacion */
 .navegacion{
-
+    background-image: url(https://media.istockphoto.com/id/517188688/es/foto/paisaje-de-monta%C3%B1a.jpg?s=1024x1024&w=0&k=20&c=3yPMhUqWCsuP1Sb7V9hIlH5IR7k70TBNb1Z69whJ5Y8=);
     background-color:  rgb(45, 82, 38)
 
     }
@@ -206,35 +159,10 @@ h2{
     border: double rgb(15, 15, 15);
 }
 
-
-/* foto de las motopartes */
-
-.foto__motopartes{
-
-    
-    margin-top: 3%;
-    padding-left: 7%;
-    display: inline;
-    height: 800px;
-    width: 800px;
-    object-fit: cover;
-
-}
-
 .foto__motopartes:hover{
 
     transform: scale(1.2, 1.2);
     transition: all 2s;
-}
-
-
-
-/*titulo de las secciones de motopartes */
-.titulo__motopartes{
-
-    text-align: center;
-    font-size: 30px;
-    color:rgb(14, 12, 11);
 }
 
 
@@ -245,11 +173,12 @@ h2{
     font-size: 20px;
     text-align: center;
     background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 
 }
 .logo{
-    width: 10%;
+    width: 15%;
 }
 
 
@@ -279,7 +208,7 @@ li a{
     }
 
 
-/* foto de tom vialle con titulo dentro */
+/* foto de termo titulo dentro */
 
     .contenedor__foto-1{
         width: 90%;
@@ -287,7 +216,7 @@ li a{
         overflow: hidden;
         position: relative;
         border-radius: 20px;
-        box-shadow: 5px 8px 12px rgb(238, 4, 4);
+        box-shadow: 5px 8px 12px rgb(8, 1, 1);
         margin: 5%;
        
     }
@@ -309,14 +238,14 @@ li a{
     }
     .cuerpo__pagina-1{
         
-        background-color: rgb(73, 71, 71);
+        background-color: rgb(192, 185, 185);
     }
 
     /* pagina login */ 
 
     body {
         background-color: #f1f1f1;
-        font-family: Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
       
       form {

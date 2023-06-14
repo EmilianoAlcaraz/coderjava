@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Formulario de contacto</title>
+    <title>CONTACTO CEBALA</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -11,9 +11,9 @@
     <nav class="navegacion">
 
         <!-- logo de la emrpresa -->
-        <img src="https://cdn.shopify.com/s/files/1/0375/3269/6635/articles/blog-news-master_series_2017-tile_671x.jpg?v=1594862358PP" class="logo" alt="logo de la empresa">
+        <img src="https://www.um.edu.uy/sites/default/files/2022-01/48.png" class="logo" alt="logo de la empresa">
         <!-- titulo de la pagina -->
-   <h1 class="titulo">BIENVENIDOS A IMPORTADOS NORTE </h1>
+   <h1 class="titulo">BIENVENIDOS A CEBALA </h1>
 
                <!-- listas desordenada de paginas -->
                  <ul id="lista">
@@ -28,11 +28,9 @@
    </nav>
     <form>
       <h2>Registro</h2>
-      <label for="username">Nombre de usuario:</label>
-      <input type="text" id="username" name="username" required>
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" required>
-      <button type="submit" id="login-button">Ingresar</button>
+      <input type="text" id="usernameInput" placeholder="Nombre de usuario">
+      <input type="password" id="passwordInput" placeholder="Contraseña">
+      <button onclick="iniciarSesion()">Iniciar sesión</button>
     </form>
     <script src="/main.js"></script>
   </body>

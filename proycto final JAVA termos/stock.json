@@ -1,6 +1,9 @@
 [
-    {"marca":"Termos stanley","color":"rosa","precio":15000,"stock": 5},
-    {"marca":"Termos stanley","color":"rojo","precio":20000,"stock": 6},
-    {"marca":"Termos stanley","color":"verde","precio":17000,"stock": 4},
-    {"marca":"Termos stanley","color":"azul","precio":10000,"stock": 8}
+    {"marca":"Termos stanley verde","precio":15000,"stock": 5},
+    {"marca":"Termos stanley rosa","precio":20000,"stock": 6},
+    {"marca":"Termos stanley rojo","precio":17000,"stock": 4},
+    {"marca":"Termos stanley azul","precio":10000,"stock": 8}
+    
 ]
+
+
